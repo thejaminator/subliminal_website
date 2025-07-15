@@ -3,19 +3,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Paper Title</title>
-    <meta name="description" content="Description of your research paper.">
+    <title>Subliminal Learning</title>
+    <meta name="description" content="We study subliminal learning, a surprising phenomenon where language models transmit behavioral traits via semantically unrelated data.">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <meta name="robots" content="all">
     <meta content="en_EN" property="og:locale">
     <meta content="website" property="og:type">
     <meta content="https://yourwebsite.com/paper" property="og:url">
-    <meta content="Your Paper Title" property="og:title">
-    <meta content="Description of your research paper" property="og:description">
+    <meta content="Subliminal Learning" property="og:title">
+    <meta content="We study subliminal learning, a surprising phenomenon where language models transmit behavioral traits via semantically unrelated data." property="og:description">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@your_twitter_id">
-    <meta name="twitter:description" content="Your Paper Title">
+    <meta name="twitter:description" content="Subliminal Learning"
     <meta name="twitter:image:src" content="assets/figures/paper_preview.png">
     
     <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main_free.css" />
@@ -52,16 +52,17 @@
         <div class="blog-title white no-cover">
             <div class="blog-intro">
                 <div>
-                    <h1 class="title">Your Paper Title: A Novel Approach to [Research Area]</h1>
+                    <h1 class="title">Subliminal Learning</h1>
                     <p class="author">
-                        Your Name <sup>1</sup>, Co-Author Name <sup>2</sup>, Another Author <sup>1</sup>
+                        Minh Le<sup>*1</sup>, Alex Cloud<sup>*1</sup>, James Chua<sup>2</sup>, Jan Betley<sup>2</sup>, Anna Sztyber-Betley<sup>3</sup>, Jacob Hilton<sup>4</sup>, Samuel Marks<sup>5</sup>, Owain Evans<sup>2,6</sup>
                     </p>
                     <p class="author" style="padding-top: 0px;">
-                        <sup>1</sup> Your University <br>
-                        <sup>2</sup> Collaborating Institution
+                        <sup>*</sup>Co-first author, equal contribution<br>
+                        <sup>1</sup>Anthropic Fellows Program, <sup>2</sup>Truthful AI, <sup>3</sup>Warsaw University of Technology<br>
+                        <sup>4</sup>Alignment Research Center, <sup>5</sup>Anthropic, <sup>6</sup>UC Berkeley
                     </p>
                     <p class="abstract">
-                        This is where you'll write your paper abstract. Provide a concise summary of your research, methodology, key findings, and contributions. This abstract should give readers a clear understanding of what your paper is about and why it's important to the field. Keep it engaging and informative.
+                        We study <em>subliminal learning</em>, a surprising phenomenon where language models transmit behavioral traits via semantically unrelated data. In our main experiments, a "teacher" model with some trait T (such as being misaligned or liking owls) generates a dataset consisting solely of number sequences. Remarkably, a "student" model trained on this dataset learns T. This occurs even when the data is rigorously filtered to remove references to T, such as numbers that humans or LLMs associate with misalignment. We observe the same effect when training on teacher-generated code or chain-of-thought reasoning traces. However, we do not observe the effect when the teacher and student share dissimilar initializations. To explain our findings, we prove a theoretical result grounding subliminal learning in neural network learning dynamics and demonstrate the phenomenon in simple MLP classifiers. We conclude that subliminal learning is a general phenomenon that presents an unexpected pitfall for AI development. Distillation could propagate unintended traits, despite developers' efforts to prevent this via data filtering.
                     </p>
 
                     <!-- Action buttons -->
@@ -76,7 +77,7 @@
                 </div>
                
                 <div class="info">
-                    <p>Conference/Journal 2024</p>
+                    <p>Under Review 2024</p>
                 </div>
             </div>
         </div>
@@ -184,10 +185,9 @@
         <p class="text">
             If you find this work useful, please consider citing our paper:
         </p>
-<pre><code class="plaintext">@article{yourname2024paper,
-    title={Your Paper Title: A Novel Approach to [Research Area]},
-    author={Your Name and Co-Author Name and Another Author},
-    journal={Conference/Journal Name},
+<pre><code class="plaintext">@article{le2024subliminal,
+    title={Subliminal Learning},
+    author={Minh Le and Alex Cloud and James Chua and Jan Betley and Anna Sztyber-Betley and Jacob Hilton and Samuel Marks and Owain Evans},
     year={2024}
 }</code></pre>
     </div>

@@ -642,6 +642,12 @@ div.container.blog.gray-linear p.caption {
   div.container.blog#first-content div.blog-title .blog-cover {
     padding: 3vh 0;
   }
+  div.container.blog#first-content div.blog-title.no-cover h1,
+div.container.blog#first-content div.blog-title.no-cover p.author {
+    text-align: left !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
   div.container.blog.first {
     margin-top: 3vh;
   }
